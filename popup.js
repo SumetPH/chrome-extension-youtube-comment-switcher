@@ -1,6 +1,8 @@
 chrome.tabs.getSelected(null, function(tab) {
   var tablink = tab.url;
-  if (tablink.includes("youtube")) {
+  if (tablink.includes("www.youtube.com")) {
+    document.getElementById("supported").style.display = "";
+
     document.getElementById("full").addEventListener("click", () => {
       chrome.tabs.executeScript({ file: "youtube/full.js" });
       window.close();
@@ -11,7 +13,6 @@ chrome.tabs.getSelected(null, function(tab) {
       window.close();
     });
   } else {
-    alert("It's don't support this website.");
-    window.close();
+    document.getElementById("unsupported").style.display = "";
   }
 });

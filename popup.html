@@ -4,16 +4,23 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container" style="width: 250px">
       <div class="row">
-        <div class="col m-3 text-center">
-          <h5>Youtube</h5>
-          <button id="full" class="btn btn-outline-danger btn-sm m-1">
-            Custom
-          </button>
-          <button id="default" class="btn btn-outline-info btn-sm m-1">
-            Defalut
-          </button>
+        <div id="supported" class="col-12" style="display: none">
+          <div class="text-center m-3">
+            <h5>Youtube</h5>
+            <button id="full" class="btn btn-outline-danger btn-sm m-1">
+              Custom
+            </button>
+            <button id="default" class="btn btn-outline-info btn-sm m-1">
+              Defalut
+            </button>
+          </div>
+        </div>
+        <div id="unsupported" class="col-12" style="display: none">
+          <div class="text-center m-3">
+            <small>It don't support this website.</small>
+          </div>
         </div>
       </div>
     </div>
