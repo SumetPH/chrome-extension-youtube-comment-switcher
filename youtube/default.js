@@ -1,8 +1,12 @@
-document.getElementById("secondary").style.overflowY = "";
-document.getElementById("secondary").style.height = "";
-document
-  .getElementById("primary-inner")
-  .appendChild(document.getElementById("comments"));
-document
-  .getElementById("secondary")
-  .appendChild(document.getElementById("secondary-inner"));
+$("#comments.style-scope.ytd-watch-flexy").appendTo(
+  "#primary-inner.style-scope.ytd-watch-flexy"
+);
+
+$("#secondary-inner.style-scope.ytd-watch-flexy").appendTo(
+  "#secondary.style-scope.ytd-watch-flexy"
+);
+
+$("#secondary.style-scope.ytd-watch-flexy").css({
+  overflowY: "",
+  height: ""
+});

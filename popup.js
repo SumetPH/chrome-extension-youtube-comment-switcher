@@ -1,18 +1,18 @@
-chrome.tabs.getSelected(null, function(tab) {
+chrome.tabs.getSelected(null, tab => {
   var tablink = tab.url;
   if (tablink.includes("www.youtube.com")) {
-    document.getElementById("supported").style.display = "";
+    $("#supported").css({ display: "" });
 
-    document.getElementById("full").addEventListener("click", () => {
+    $("#full").click(() => {
       chrome.tabs.executeScript({ file: "youtube/full.js" });
       window.close();
     });
 
-    document.getElementById("default").addEventListener("click", () => {
+    $("#default").click(() => {
       chrome.tabs.executeScript({ file: "youtube/default.js" });
       window.close();
     });
   } else {
-    document.getElementById("unsupported").style.display = "";
+    $("#unsupported").css({ display: "" });
   }
 });
