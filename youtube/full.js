@@ -8,5 +8,5 @@ $("#secondary-inner.style-scope.ytd-watch-flexy").appendTo(
 
 $("#secondary.style-scope.ytd-watch-flexy").css({
   overflowY: "auto",
-  height: "100vh"
+  height: "80vh"
 });
