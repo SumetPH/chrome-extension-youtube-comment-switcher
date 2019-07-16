@@ -1,15 +1,16 @@
 chrome.tabs.getSelected(null, tab => {
   var tablink = tab.url;
+  // check support
   if (tablink.includes("www.youtube.com")) {
     $("#supported").css({ display: "" });
 
-    $("#full").click(() => {
-      chrome.tabs.executeScript({ file: "youtube/full.js" });
+    $("#enable").click(() => {
+      chrome.tabs.executeScript({ file: "youtube/enable.js" });
       window.close();
     });
 
-    $("#default").click(() => {
-      chrome.tabs.executeScript({ file: "youtube/default.js" });
+    $("#disable").click(() => {
+      chrome.tabs.executeScript({ file: "youtube/disable.js" });
       window.close();
     });
   } else {
