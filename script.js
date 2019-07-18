@@ -1,0 +1,20 @@
+document.body.addEventListener(
+  "transitionend",
+  () => {
+    if (localStorage.getItem("yt-layout")) {
+      $("#comments.style-scope.ytd-watch-flexy").appendTo(
+        "#secondary.style-scope.ytd-watch-flexy"
+      );
+
+      $("#secondary-inner.style-scope.ytd-watch-flexy").appendTo(
+        "#primary-inner.style-scope.ytd-watch-flexy"
+      );
+
+      $("#secondary.style-scope.ytd-watch-flexy").css({
+        overflowY: "auto",
+        height: "80vh"
+      });
+    }
+  },
+  true
+);

@@ -1,3 +1,5 @@
+localStorage.removeItem("yt-layout");
+
 $("#comments.style-scope.ytd-watch-flexy").appendTo(
   "#primary-inner.style-scope.ytd-watch-flexy"
 );
