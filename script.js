@@ -1,20 +1,31 @@
-document.body.addEventListener(
-  "transitionend",
-  () => {
-    if (localStorage.getItem("yt-layout")) {
-      $("#comments.style-scope.ytd-watch-flexy").appendTo(
-        "#secondary.style-scope.ytd-watch-flexy"
-      );
+if (document.getElementById("enable") === null) {
+  // add element for check status
+  $("body").append("<span id='enable'></span>");
 
-      $("#secondary-inner.style-scope.ytd-watch-flexy").appendTo(
-        "#primary-inner.style-scope.ytd-watch-flexy"
-      );
+  // move element in page
+  $("#comments.style-scope.ytd-watch-flexy").appendTo(
+    "#secondary.style-scope.ytd-watch-flexy"
+  );
+  $("#secondary-inner.style-scope.ytd-watch-flexy").appendTo(
+    "#primary-inner.style-scope.ytd-watch-flexy"
+  );
+  $("#secondary.style-scope.ytd-watch-flexy").css({
+    overflowY: "auto",
+    height: "80vh"
+  });
+} else {
+  // remove element for check status
+  $("#enable").remove();
 
-      $("#secondary.style-scope.ytd-watch-flexy").css({
-        overflowY: "auto",
-        height: "80vh"
-      });
-    }
-  },
-  true
-);
+  // move element in page
+  $("#comments.style-scope.ytd-watch-flexy").appendTo(
+    "#primary-inner.style-scope.ytd-watch-flexy"
+  );
+  $("#secondary-inner.style-scope.ytd-watch-flexy").appendTo(
+    "#secondary.style-scope.ytd-watch-flexy"
+  );
+  $("#secondary.style-scope.ytd-watch-flexy").css({
+    overflowY: "",
+    height: ""
+  });
+}
