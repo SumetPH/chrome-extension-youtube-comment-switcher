@@ -1,4 +1,4 @@
-# Chrome Extension Comment Switcher
+# Chrome Extension Youtube Comment Switcher
 This extension for switch the comment section when you need to read comments and watch video in the same time.  
 
 **How to install**
