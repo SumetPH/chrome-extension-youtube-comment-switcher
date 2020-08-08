@@ -3,7 +3,7 @@ This extension for switch the comment section when you need to read comments and
 
 **How to install**
 - Install extension in Load Unpacked.
-- Open a video in Youtube and Click extension icon for switch the comment section.
+- Open a video in Youtube and click the icon of extension for switch the comment section.
 
 **Test**
 - Browser : Chrome v.83
