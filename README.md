@@ -10,5 +10,7 @@ This extension for switch the comment section when you need to read comments and
 - OS : macOS
 
 ## Example
+Before
 <img src="https://i.imgur.com/VCJKbeU.png" />
+After
 <img src="https://i.imgur.com/0CAwJM4.png" />
